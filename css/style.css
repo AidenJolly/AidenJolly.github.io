@@ -1,0 +1,47 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: green;
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    background-color: blue;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#content {
+    background-color: yellowgreen;
+    width: 60%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#blogposts {
+    margin: 10px;
+    border: 1px solid black;
+    background-color: blueviolet;
+}
+
+.post {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: crimson;
+}
+
+.post .left {
+    float: left;
+    margin-right: 10px;
+}
+
+.post img {
+    width: 200px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
