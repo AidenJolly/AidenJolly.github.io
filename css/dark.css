@@ -1,18 +1,28 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: green;
+    background-color: darkslateblue;
     margin: 0;
     padding: 0;
 }
+a {
+    color: chartreuse;
+}
+
+a :hover {
+    color: orchid;
+}
+a :visited {
+    color: yellow
+}
 
 #banner {
-    background-color: blue;
+    background-color: darkblue;
     text-align: center;
     border: 1px solid black;
 }
 
 #content {
-    background-color: yellowgreen;
+    background-color: darkgreen;
     width: 60%;
     margin: auto;
     border: 1px solid black;
@@ -21,14 +31,14 @@ body {
 #blogposts {
     margin: 10px;
     border: 1px solid black;
-    background-color: blueviolet;
+    background-color: darkviolet;
 }
 
 .post {
     margin: 10px;
     padding: 10px;
     border: 1px solid black;
-    background-color: crimson;
+    background-color: darkred;
 }
 
 .post .left {
