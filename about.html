@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my website</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+    <style>
+    </style>
 </head>
-
 <body>
+    </div>
     <div id="content">
         <div id="banner">
-            <h1>My website</h1>
-            <a href="about.html">about me</a> |
+            <h1>Aiden's website</h1>
             <a href="gameguide.html">Get To School</a>
-            <a href="index.html">home page</a>
-            <a href="bossmonster.html">boss</a>
+            <a href="index.html">Home page</a>
+            <a href="#" onclick="changeSheet()"> change color</a>
         </div>
         <div id="blogposts">
             <div class="post">
                 <h2>About me</h2>
-                <p>currently my favorite game is elden ring and im excted for the shadows of the erdree dlc. gammes i'm
+                <img src="img/elden ring.jfif" alt="elden ring" class="images">
+                <img src="img/sekiro.jfif" alt="sekiro" class="images">
+                <img src="img/lies of p.jfif" alt="lies of p" class="images">
+                <img src="img/guilty gear.jfif" alt="guilty gear" class="images">
+                <p>currently my favorite game is elden ring and im excted for the shadows of the erdree dlc. games i'm
                     currently playing include sekiro, lies of p, and dark souls 3. I mostly play souls likes but I also
-                    play other games like emires of the undergrowth, persona 3 reload, helldivers2, and guilty gear. </p>
+                    play other games like emires of the undergrowth, persona 3 reload, helldivers2, and guilty gear strive. </p>
+            </div>
+        </div>
+        <div class="post">
+            <h2>My Hobbies</h2>
+            <img src="img/gurren.jfif" alt="gurren lagann" class="images">
+                    <img src="img/juju.jfif" alt="jujutsu kaisen" class="images">
+                    <img src="img/chain.jfif" alt="chainsaw man" class="images">
                 <p>I also watch anime my favorite is gurren lagann some others i watched and liked include are jjk,
                     chainsaw man, jobless reinarnation, and fire force</p>
-
-            </div>
+                <p>currently still learning the basics of game devolpment so all feedback on my games are very welcome. </p>
         </div>
 
     </div>
-    </div>
 </body>
-
+<script>
+    var lightMode = true
+    function changeSheet() {
+        lightMode = !lightMode;
+        //used to show every thing it is not//
+        // of light mode turn off dislplay dark style sheet//
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        if (lightMode == false) {
+            console.log("Turning dark mod on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+            {
+            console.log("Turning light mod on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+        }
+    }
+</script>
 </html>

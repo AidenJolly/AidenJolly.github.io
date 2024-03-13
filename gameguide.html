@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my website</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
 </head>
-
 <body>
     <div id="content">
         <div id="banner">
-            <h1>My website</h1>
-            <a href="about.html">about me</a> |
-            <a href="gameguide.html">Get To School</a>
-            <a href="index.html">home page</a>
-            <a href="bossmonster.html">boss</a>
+            <h1>Aiden's Website</h1>
+            <a href="about.html">about me</a>
+            <a href="index.html">Home page</a>
+            <a href="#" onclick="changeSheet()"> change color</a>
         </div>
         <div id="blogposts">
             <div class="post">
@@ -35,10 +33,27 @@
 
             </div>
         </div>
-        </div>
-
-    </div>
     </div>
 </body>
-
+<script>
+    var lightMode = true
+    function changeSheet() {
+        lightMode = !lightMode;
+        //used to show every thing it is not//
+        // of light mode turn off dislplay dark style sheet//
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        if (lightMode == false) {
+            console.log("Turning dark mod on...");
+            darkSheet.media = "";
+            lightSheet.media = "none";
+        } else {
+            {
+            console.log("Turning light mod on...");
+            darkSheet.media = "none";
+            lightSheet.media = "";
+        }
+        }
+    }
+</script>
 </html>

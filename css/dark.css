@@ -1,48 +1,64 @@
 body {
+    background-color: grey;
+    background-image: -webkit-linear-gradient(linear, left top, left bottom, from(black), to(grey));
+    background-image: -webkit-linear-gradient(top, black, grey);
+    background-image: -moz-linear-gradient(top, black, grey);
+    background-image: -ms-linear-gradient(top, black, grey);
+    background-image: -o-linear-gradient(top, black, grey);
+    background-image: linear-gradient(top, black, grey);
+    clear: both;
     font-family: 'Times New Roman', Times, serif;
-    background-color: darkslateblue;
-    margin: 0;
-    padding: 0;
 }
 a {
-    color: chartreuse;
+    color: white;
 }
 
 a :hover {
-    color: orchid;
+    color: blue;
 }
 a :visited {
-    color: yellow
+    color: purple;
 }
 
 #banner {
-    background-color: darkblue;
+    background-color: grey;
     text-align: center;
     border: 1px solid black;
 }
 
 #content {
-    background-color: darkgreen;
+    background-color: grey;
     width: 60%;
     margin: auto;
-    border: 1px solid black;
+    border: 10px solid black;
+    border-radius:10px; /* Outer Radius*/
+    background:
+     radial-gradient(farthest-side at bottom right,#0000 98%,grey) top left,
+     radial-gradient(farthest-side at top    right,#0000 98%,grey) bottom left,
+     radial-gradient(farthest-side at bottom left ,#0000 98%,grey) top right,
+     radial-gradient(farthest-side at top    left ,#0000 98%,grey) bottom right,
+     darkblue;
+    background-size:25px 25px; /* inner Radius*/
+    background-repeat:no-repeat;
+    background-origin:padding-box;
 }
 
 #blogposts {
     margin: 10px;
+    padding: 10px;
     border: 1px solid black;
-    background-color: darkviolet;
+    background-color: grey;
 }
 
 .post {
     margin: 10px;
     padding: 10px;
     border: 1px solid black;
-    background-color: darkred;
+    background-color: grey;
 }
 
 .post .left {
-    float: left;
+    block-size: auto;
     margin-right: 10px;
 }
 
